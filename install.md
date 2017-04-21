@@ -89,6 +89,21 @@
 # Native User Authentication
   * https://www.elastic.co/guide/en/x-pack/current/native-realm.html
 
+# Elasticsearch.yml
 
+     > xpack.ssl.key:                     /etc/elasticsearch/x-pack/node1/node1.key
+     > xpack.ssl.certificate:             /etc/elasticsearch/x-pack/node1/node1.crt
+     > xpack.ssl.certificate_authorities: [ "/etc/elasticsearch/x-pack/ca/ca.crt" ]
+     > xpack.security.transport.ssl.enabled: true
+     > xpack.security.http.ssl.enabled: true
+     > xpack.security.http.ssl.client_authentication: required
+
+      > xpack.security.authc.realms:
+      >  pki1:
+      >    type: pki
+      >    order: 0
+      >  native:
+      >    type: native
+      >    order: 1
 
 

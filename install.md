@@ -91,6 +91,9 @@
 
 # Elasticsearch.yml
 
+    network.host: "rri2nlxadl1v.pbm-specialty.cic.cvshealth.com"
+
+
       xpack.ssl.key:                     /etc/elasticsearch/x-pack/node1/node1.key
       xpack.ssl.certificate:             /etc/elasticsearch/x-pack/node1/node1.crt
       xpack.ssl.certificate_authorities: [ "/etc/elasticsearch/x-pack/ca/ca.crt" ]
@@ -105,5 +108,18 @@
         native:
           type: native
           order: 1
+# Kibana.yml
+
+      elasticsearch.ssl.cert: /etc/elasticsearch/x-pack/client/client.crt
+      elasticsearch.ssl.key: /etc/elasticsearch/x-pack/client/client.key
+
+      To disregard the validity of SSL certificates, change this setting's value to false.
+      elasticsearch.ssl.verify: false
+
+      server.ssl.key:                     /etc/elasticsearch/x-pack/node1/node1.key
+      server.ssl.cert:                   /etc/elasticsearch/x-pack/node1/node1.crt
+      elasticsearch.ssl.ca:              [ "/etc/elasticsearch/x-pack/ca/ca.crt" ]
+
+
 
 

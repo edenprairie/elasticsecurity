@@ -127,5 +127,10 @@
       elasticsearch.ssl.ca:              [ "/etc/elasticsearch/x-pack/ca/ca.crt" ]
 
 
+# Role_mapping.yml
+    Example: 
+      superuser:
+        - "CN=nest"
+        - "CN=esclient.mnit.com"
 
 

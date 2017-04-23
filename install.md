@@ -91,9 +91,8 @@
 
 # Elasticsearch.yml
 ##sudo nano /etc/elasticsearch/elasticsearch.yml
-    network.host: "rri2nlxadl1v.pbm-specialty.cic.cvshealth.com"
 
-
+      network.host: "rri2nlxadl1v.pbm-specialty.cic.cvshealth.com"
       xpack.ssl.key:                     /etc/elasticsearch/x-pack/node1/node1.key
       xpack.ssl.certificate:             /etc/elasticsearch/x-pack/node1/node1.crt
       xpack.ssl.certificate_authorities: [ "/etc/elasticsearch/x-pack/ca/ca.crt" ]

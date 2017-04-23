@@ -90,7 +90,7 @@
   * https://www.elastic.co/guide/en/x-pack/current/native-realm.html
 
 # Elasticsearch.yml
-
+##sudo nano /etc/elasticsearch/elasticsearch.yml
     network.host: "rri2nlxadl1v.pbm-specialty.cic.cvshealth.com"
 
 
@@ -109,7 +109,7 @@
           type: native
           order: 1
 # Kibana.yml
-
+## sudo nano /etc/kibana/kibana.yml
       elasticsearch.ssl.cert: /etc/elasticsearch/x-pack/client/client.crt
       elasticsearch.ssl.key: /etc/elasticsearch/x-pack/client/client.key
 

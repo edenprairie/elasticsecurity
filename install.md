@@ -91,6 +91,9 @@
 
 # Elasticsearch.yml
 ##sudo nano /etc/elasticsearch/elasticsearch.yml
+### sudo systemctl stop elasticsearch.service
+### sudo systemctl start elasticsearch.service
+### sudo systemctl start elasticsearch.service
 
       network.host: "your fully qualified DNS name"
       xpack.ssl.key:                     /etc/elasticsearch/x-pack/node1/node1.key
@@ -109,6 +112,10 @@
           order: 1
 # Kibana.yml
 ## sudo nano /etc/kibana/kibana.yml
+### sudo systemctl stop kibana.service
+### sudo systemctl start kibana.service
+### sudo systemctl start kibana.service
+
       elasticsearch.ssl.cert: /etc/elasticsearch/x-pack/client/client.crt
       elasticsearch.ssl.key: /etc/elasticsearch/x-pack/client/client.key
 

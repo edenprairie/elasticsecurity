@@ -132,5 +132,3 @@
       superuser:
         - "CN=nest"
         - "CN=esclient.mnit.com"
-
-

@@ -1,5 +1,6 @@
 ---
-title: Document Center
+layout: post
+title: Blogging Like a Hacker
 ---
 # Elasticsearch Installation: #
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html

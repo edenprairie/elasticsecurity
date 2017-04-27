@@ -1,3 +1,6 @@
+---
+title: Document Center
+---
 # Elasticsearch Installation: #
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
   > wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -

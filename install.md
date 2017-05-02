@@ -63,16 +63,16 @@
   > sudo systemctl stop kibana.service
   
 * https://www.elastic.co/guide/en/kibana/current/deb.html
-  > wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+  >wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 * Installing from the APT repositoryedit
-  > sudo apt-get install apt-transport-https
+  >sudo apt-get install apt-transport-https
 * Save the repository definition to /etc/apt/sources.list.d/elastic-5.x.list:
-    > echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
-    > sudo apt-get update && sudo apt-get install kibana
-    > sudo /bin/systemctl daemon-reload
-    > sudo /bin/systemctl enable kibana.service
-    > sudo systemctl start kibana.service
-    > sudo systemctl stop kibana.service
+    >echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+    >sudo apt-get update && sudo apt-get install kibana
+    >sudo /bin/systemctl daemon-reload
+    >sudo /bin/systemctl enable kibana.service
+    >sudo systemctl start kibana.service
+    >sudo systemctl stop kibana.service
     
 # Setting Up SSL/TLS on a Cluster
   * https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html
